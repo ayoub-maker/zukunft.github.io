@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+*{
+    padding: 0;margin: 0;box-sizing: border-box;text-align: center;font-family:raleway,sans-serif; transition:ease-in 150ms ;
+}
+img{
+    width:100%;
+}
+/* === nav === */
+header{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+}
+
+.logo img{
+    width: 30vw;
+    margin:1.5em;
+}
+.nav-sec ul{
+    display: flex;
+    
+    
+}
+.nav-sec li, .nav-sec li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    width: 100%;
+}
+.nav-sec li{
+    padding: 1em;
+}
+.nav-sec li a{
+ font-weight: 700;
+}
+
+/* === Nav responsive === */
+@media (min-width:950px){
+   .logo img{
+       display: flex;
+       width:10vw;
+       height: 10vh;
+       position: absolute;
+   }
+   .nav-sec ul{
+       float: right; 
+   }
+   .nav-sec li , .nav-sec li a { 
+       padding:2em 2em;
+       font-size: 20px;
+       width:100%;
+   }
+}
+
+
+/* === hero === */
+.hero{
+    background-image: url(Zukunft\ RES/Ena.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    width: 100% ;
+    position: relative;
+}
+.hero:after{
+    content: "";
+    background: black;
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity: .5 ;
+}
+.container h1,.container.a{
+    z-index: 5;
+}
+.container{
+    padding:5%;
+    height: auto;
+}
+.hero h1{
+padding-top: 30vh;
+font-size: 2em;
+color: white;
+font-weight: 900;
+position: relative;
+
+
+}
+.hero span{
+font-weight: 200;
+font-size: .7em;
+
+}
+.hero a{                     
+text-decoration: none;
+font-weight: 600;
+text-transform: uppercase;
+padding:.3em 1.5em;
+font-size: 1em;
+color:#3279F3 ;
+border :2px solid #3279F3; 
+position: absolute;
+top:60vh;
+left: 50%;
+transform: translateX(-50%);
+z-index: 5;
+}
+
+/* === hero responsiver === */
+@media(min-width:950px){
+
+    .hero h1{
+        padding-top: 20vh;
+        font-size: 4.5em;
+        }
+        .hero span{
+        font-size: .6em;
+        }
+     
+        .hero a{
+        font-weight: 700;
+        font-size:1.45em;
+        padding:.6em 3em;
+        top:70vh;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        .hero a:hover{
+            color: #232323;
+            background-color: #3279F3;
+        }
+}
+
+/* === about === */
+
+.card{
+    padding: 1em;
+    height:auto;
+    background: #232323;
+    outline: 2px solid #3279F3;
+    outline-offset: -2em;
+    padding:  3em;
+    position: relative;
+
+}
+
+
+.about p{
+    color: white;
+    text-align:  justify;
+    margin-top: 1.5em;
+    line-height: 2em;
+    
+}
+.about h1{
+    font-size: 28px;
+    width: 60%;
+    color: #3279F3;
+    text-transform: uppercase;
+    background: #232323;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .6em;
+}
+.about #L{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3279F3;
+    display: flex;
+    justify-content: center;
+}
+
+/* === about responsiver === */
+@media(min-width:950px){
+
+    .about{
+        position: relative;
+    }
+    .bg{
+        height:100vh;
+        background-image: url(Zukunft\ RES/portfolio-01.jpg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        object-fit: cover;
+        background-size: cover;
+        margin-right:10% ;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .card{
+        width: 40vw;
+        max-height: 100%;
+        padding: 1em;
+        height:auto;
+        background: #232323;
+        outline: 2px solid #3279F3;
+        outline-offset: -3em;
+        padding:  4.5em;
+        position: absolute;
+        left: 6%;
+        top:-10%;
+        
+    }
+    .about p{
+        font-size: 1.3em;
+        line-height: 2em;
+        
+    }
+    .about h1{
+        font-size: 34.3px;
+        width: 60%;
+        top: 28px;
+    }
+}
+@media(width:1024px){
+    .card
+   { width: 60vw; height: 80vh;}
+   .about #L {display: none;}
+}
+
+/* === portfolio === */
+.portfolio{
+    background-color: #00ff6c;
+}
+.button.button-accent{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:.3em 1.5em;
+    font-size: 1em;
+    color:#3279F3 ;
+    border :2px solid #3279F3; 
+}
+.button.button-accent:hover{
+    color: #232323;
+    background: #3279F3;
+}
+
+
+.port-item{
+    position: relative;
+   
+    
+}
+
+.port-desc{
+    position: absolute;
+    bottom: 0;
+    background-color: #232323c9;
+    width: 100%;
+    height: 19vh;
+}
+
+
+
+
+.port-desc p{
+    color: white;
+    margin:1em;
+    font-weight: 800;
+
+}
+.heading{
+    margin: 1em;
+
+}
+.heading span{
+    padding-top: 5px;
+}
+
+
+/* === portfolio responsive === */
+
+@media (min-width:550px){
+    .port-item{
+        width:50%;
+        float: left;
+    }
+
+}
+@media (min-width:950px){
+    .port-item{
+        width:33.33333%;
+        margin-top:-1.5em;
+       
+    }
+    .port-item{
+       
+        overflow: hidden;
+    }
+    
+    
+    .port-desc{
+        transform: translateY(150%);
+        transition: ease 300ms;
+    }
+    .port-item:hover .port-desc{
+        transform: translateY(0%);
+    }
+    
+}
+/* === feedback === */
+    .feedback{
+        height:50vh;
+        color: #232323;
+        position: relative;
+        background: #3279F3;
+        margin-top:-.8em ;
+}
+
+    .feedback h1{
+        padding-top: 7vh;
+        font-size: 2em;
+        font-weight: 800;
+    }
+    .feedback p{
+        font-size: 1.5em;
+       
+    }
+    .button.button-small{
+        border-color: #232323;
+        color: #232323;
+    }
+    .button.button-small:hover{
+        background-color: #232323;
+        color: #3279F3;
+    }
+    section::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+/* === feedback responsive === */
+    @media(min-width:950px){
+        .feedback h1{
+            font-size: 70px; 
+        }
+        .feedback p{
+            font-size: 40px;
+        }
+        .button.button-small{
+
+            font-size: 1.2em;
+           
+        }
+}
+
+/* === footer ===  */
+
+
+    .footer{
+           
+            height:auto;
+            position: relative;
+            width: 100%;
+            background: #232323;
+            padding-top:2em ;
+    
+          }
+        .div{
+        width:33.333%;
+        padding-top:1em ;
+        float: right;
+
+          }
+        .div1{
+            width:100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            position: relative;
+            text-align: start;
+        }
+        .div1 img ,.div1 p{
+           display: none;
+        }
+        .footer li ,.footer li a{
+            text-decoration: none;
+            list-style: none;
+            font-size: 1em;
+        }
+        .footer li a{
+            color:white;
+            padding: .5em;
+        }
+        .div h3{
+            font-size: 25px;
+            letter-spacing: 3px;
+            color: white;
+            padding: 1em;
+        }
+    strong{
+        color:white;
+        position: relative;
+        width: 95%;
+        font-size: 15px;
+        font-weight: 400;
+        
+    }
+     .boot{
+        position: relative;
+        bottom:0;
+        
+      
+    }
+    .boot img{
+        width: 3em;
+        margin:10px;
+        margin-top: 2.5em;
+        margin-right:.5em;
+        margin-left: .5em;
+        padding:1vh;
+       
+    } 
+
+/* === footer responsive === */
+
+    @media (min-width:770px){
+        .div{
+            width:20%;
+            padding-bottom:4em ;
+              }
+             
+            .div1{
+                width:40%;
+                padding-left: 10px;
+                padding-right: 10px;
+                position: absolute;
+                padding-top: 2em;
+            }
+            .boot{
+                position: absolute;   
+                left:8vh;      
+            }
+            .boot img{
+                margin:0;
+                padding:1vh;  
+                width: 4em;
+            } 
+}
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
